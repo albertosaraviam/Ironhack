@@ -17,7 +17,7 @@ class Map
 				@current_room = @current_room
 			end
 	end
-	def end
+	def ending
 		if @current_room == @rooms.length
 			"The game has ended"
 		end
