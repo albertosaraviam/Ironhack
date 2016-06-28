@@ -1,0 +1,25 @@
+
+.trello {
+	position: relative;
+	left: 250px;
+}
+
+.signup {
+	float: right;
+	margin: 3px;
+}
+
+.login {
+	float: right;
+	margin: 3px;
+}
+
+.btn-default {
+	margin: 3px;
+}
+
+.number3 {
+	position:relative;
+	left: 34px;
+}
+
