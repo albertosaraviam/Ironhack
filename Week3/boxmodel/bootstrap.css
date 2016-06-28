@@ -1,7 +1,13 @@
 
+body {
+	background-image: url("https://trello-backgrounds.s3.amazonaws.com/53baf533e697a982248cd73f/4200x4200/48dbf0b5a546541e847e267a5dcd2201/shutterstock_134707556.jpg");
+	background-size: cover;
+}
+
+
 .trello {
 	position: relative;
-	left: 250px;
+	left: 270px;
 }
 
 .signup {
@@ -16,10 +22,79 @@
 
 .btn-default {
 	margin: 3px;
+	background:none;
+	border:none;
+	color: white;
+	font-weight: bold;
 }
 
 .number3 {
 	position:relative;
-	left: 34px;
+	left: 24px;
 }
+
+
+.text-one {
+	margin: 4px;
+	padding: 10px;
+	border: 2px solid gray;
+	height: 350px;
+	background: #DCDCDC;
+	border-radius: 10px;
+}
+
+
+.text-two {
+	margin: 4px;
+	padding: 10px;
+	border: 2px solid gray;
+	height: 530px;
+	background: #DCDCDC;
+	border-radius: 10px;
+}
+
+.text-three {
+	margin: 4px;
+	padding: 10px;
+	border: 2px solid gray;
+	height: 530px;
+	background: #DCDCDC;
+	border-radius: 10px;
+}
+
+.block1 {
+	margin:2px;
+	background:white;
+	color: black;
+	width:220px;
+	white-space:normal;
+	font-family:Arial;
+	font-weight: normal;
+	margin-top: 6px;
+}
+
+.block2 {
+	margin:2px;
+	background:white;
+	color: black;
+	width:220px;
+	white-space:normal;
+	font-family:Arial;
+	font-weight: normal;
+	margin-top: 6px;
+}
+
+.block2-image {
+	background:white;
+	color: black;
+	width:220px;
+	white-space:normal;
+	font-family:Arial;
+	font-weight: normal;
+	margin-top: 6px;
+	margin:2px;
+}
+
+
+
 

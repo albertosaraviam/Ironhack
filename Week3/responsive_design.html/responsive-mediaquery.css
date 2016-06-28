@@ -1,0 +1,23 @@
+.header-image{
+	background-image:url("https://media0.giphy.com/media/6thzUiDtRozQI/200.gif");
+	background-repeat:no-repeat;
+	height: 250px;
+}
+
+
+
+@media screen and (min-width: 800px) {
+	.header-image {
+		height: 700px;
+		background-image: url("https://media.giphy.com/media/Ivc8jedtEMYH6/giphy.gif");
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+
+	.header-image {
+		height: 1000px;
+		background-image: url("https://media.giphy.com/media/z1LF3zd5RyZnq/giphy.gif");
+	}
+}
