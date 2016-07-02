@@ -4,10 +4,7 @@ class Car {
 	constructor(model, noise) {
 		this.model = model;
 		this.noise = noise;
-	}
-
-	numberOfWheels() {
-		console.log(4);
+		this.wheels = 4;
 	}
 }
 
@@ -15,4 +12,4 @@ var mercedes = new Car("mercedes benz", "brooooomm");
 
 console.log(mercedes.noise);
 
-mercedes.numberOfWheels();
+console.log(mercedes.wheels);
