@@ -1,0 +1,17 @@
+<h1>Word Central</h1>
+
+<form action="/">
+	<div>
+			<p>Your text is: <b><%=params[:text_inspection][:user_text]%></b></p>
+
+			<p>Your word count is:</p><b><%= @word_count %></b>
+
+			<p>The amount of reading time is approximately <b><%= @words_per_min %> seconds.</b></p>
+
+			<p>The most commonly used words are: </p><%= @frequency %>
+
+	
+	</div>
+
+		<button type="HOME">HOME</button>
+</form>
