@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
 	get '/projects', to: 'projects#index'
 
-	get 'projects/:id', to: 'projects#show'
+	get '/projects/new', to: 'projects#new' 
+
+	get '/projects/:id', to: 'projects#show' #README id on bot b/c if on top program thinks "new" is "id"
+
+	post '/projects', to: 'projects#create'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

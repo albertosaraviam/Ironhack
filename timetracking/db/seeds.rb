@@ -16,4 +16,13 @@ projectG = Project.create(name: "Whale", description: "Fat")
 projectH = Project.create(name: "Table", description: "Flat")
 projectI = Project.create(name: "Happy", description: "Today")
 
+TimeEntry.create(project_id: projectA.id, hours: 2, minutes: 30, comments: "Wohoo")
+TimeEntry.create(project_id: projectB.id, hours: 3, minutes: 35, comments: "asdf")
+TimeEntry.create(project_id: projectC.id, hours: 4, minutes: 40, comments: "lkj;l")
+TimeEntry.create(project_id: projectD.id, hours: 5, minutes: 45, comments: "asd;hlf")
+TimeEntry.create(project_id: projectE.id, hours: 6, minutes: 50, comments: "comment")
+TimeEntry.create(project_id: projectF.id, hours: 7, minutes: 20, comments: "anothercomment")
+TimeEntry.create(project_id: projectG.id, hours: 8, minutes: 25, comments: "morecomments")
+TimeEntry.create(project_id: projectH.id, hours: 9, minutes: 20, comments: "waymorecomments")
+
 puts "done"
