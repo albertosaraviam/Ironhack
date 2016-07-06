@@ -1,8 +1,8 @@
 class ProjectsController < ApplicationController
-	def index
-		@projects = Project.order(created_at: "desc")
-						   .limit(10)
 
-		render 'index'
+	def show
+		@my_project = Project.find_by(id: params[:id])
+
+		render 'show'
 	end
 end

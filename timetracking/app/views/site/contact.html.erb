@@ -1,2 +1,10 @@
 <h2>Contact page</h2>
-<a href="www.facebook.com">darkman123@hotmail.com</a>
+<ul>
+	<% @projects.each do |project| %>
+	<li><%= project.name %></li>
+
+		<%if project.description != nil %>
+			- <%= project.description %>
+		<%end%> 
+	<% end %>
+</ul>
