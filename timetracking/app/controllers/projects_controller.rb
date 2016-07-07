@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
 
-	def projects
-		@projects = Project.order(created_at: "desc")
+	def index
+		@projects_array = Project.order(created_at: "desc")
 						   .limit(10)	
 
 		render 'index'

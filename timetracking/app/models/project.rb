@@ -1,8 +1,9 @@
 class Project < ApplicationRecord
 	has_many :time_entries
-end
 
-class TimeEntry < ActiveRecord::Base
-	belongs_to :project
-end
+	def self.clean_old
 
+		old_projects = Project.where("created_at < ?",1.week_ago)
+		old_projects.destroy_all
+	end
+end

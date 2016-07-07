@@ -1,10 +1,20 @@
-<h2>Index page</h2>
+<h2>List of Projects</h2>
 <ul>
-	<% @projects.each do |project| %>
-	<li><%= project.name %></li>
+	<% @projects_array.each do |the_project| %>
+		<li>
 
-		<%if project.description != nil %>
-			- <%= project.description %>
-		<%end%> 
+		<a href="/projects/<%= the_project.id %>">
+			<%= the_project.name %>
+		</a>
+
+			<%if the_project.description != nil %>
+			- <%= the_project.description %>
+			<%end%> 
+		</li>
 	<% end %>
 </ul>
+
+
+<a href="/projects/new">
+  Add a project
+</a>

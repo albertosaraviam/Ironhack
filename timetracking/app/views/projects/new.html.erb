@@ -1,12 +1,19 @@
-<h1>Add a project</h1>
+<h1>Add a new project</h1>
 
 <%= form_for @my_project do |f| %>
+	<div>
 
 	<%= f.label :name %>
 	<%= f.text_field :name %>
 
+	</div>
+
+	<div>
+
 	<%= f.label :description %>
 	<%= f.text_area :description %>
+
+	</div>
 
 	<%= f.button %>
 <% end %>

@@ -2,18 +2,25 @@
 
 <ul>
 
-	<% @my_entries.each do |entry| %>
+	<% @entries_array.each do |the_entry| %>
 
 	<li>
 
-		<%= entry.hours %> h
+		<%= the_entry.hours %> hours
 
-		<%= entry.minutes %> m -
+		<%= the_entry.minutes %> minutes
 
-		<%= entry.date %>
+		<%= the_entry.date %> 
+
+		<p> <%= the_entry.comments %> </p>
 	</li>
 
 
 	<% end %>
 
 </ul>
+
+
+<a href="/projects/<%= @my_project.id %>/time_entries/new">
+  Add a time entry to <%= @my_project.name %>
+</a>
