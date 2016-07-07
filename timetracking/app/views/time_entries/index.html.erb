@@ -13,6 +13,8 @@
 		<%= the_entry.date %> 
 
 		<p> <%= the_entry.comments %> </p>
+
+		<%= link_to('Delete', project_time_entry_path(@my_project, the_entry), method: :delete, data:{confirm: 'Are you sure?'}) %>
 	</li>
 
 
@@ -24,3 +26,9 @@
 <a href="/projects/<%= @my_project.id %>/time_entries/new">
   Add a time entry to <%= @my_project.name %>
 </a>
+
+<a href="/projects/:project_id/time_entries/:id/edit">  
+  EDIT
+ </a>
+
+ <
