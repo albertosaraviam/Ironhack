@@ -1,0 +1,49 @@
+<%= form_for [@new_concert] do |f| %>
+
+	<%= f.label :artist %>
+
+	<%= f.text_field :artist %>
+
+	<br>
+
+	<%= f.label :description %>
+
+	<%= f.text_area :description %>
+
+	<br>
+
+	<%= f.label :date %>
+
+	<%= f.date_field :date %>
+
+	<br>
+
+	<br> 
+
+	<%= f.label :venu %>
+
+	<%= f.text_field :venu %>
+
+	<br>
+
+	<br>
+
+	<%= f.label :city %>
+
+	<%= f.text_field :city %>
+
+	<br>
+
+	<br>
+
+	<%= f.label :price %>
+
+	<%= f.text_field :price %>
+
+	<br>
+
+	<%= f.submit %>
+
+<!-- 	<%= link_to Cancel, project_time_entries_path(@new_concert) %> -->
+
+<% end %>

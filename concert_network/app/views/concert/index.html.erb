@@ -1,0 +1,22 @@
+<h2> List of Concerts available today </h2>
+<ul>
+
+	<% @concert_array.each do |the_concert| %>
+		<li>
+
+		<a href="/concert/<%=the_concert.id %>">
+			<%= the_concert.artist %>
+			- <%= the_concert.city %>
+		</a>
+
+			<%if the_concert.description != nil %>
+			<p>	- <% the_concert.description %> </p>
+
+			<% end %>
+		</li>
+	<% end %>
+</ul>
+
+<a href="/concert/new">
+	ADD CONCERT
+</a>

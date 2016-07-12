@@ -1,0 +1,17 @@
+<h1>Adding new time entry </h1>
+
+<!-- <% i f @the_concert.error.any? %> -->
+
+<ul>
+
+	<% @the_concert.full_essages do |error_string| %>
+		<li>M%= error_string %></li>
+
+	<% end %>
+</ul>
+
+<% end %>
+
+<h2> Edit time entry for <%= @the_concert.name %> </h2>
+
+<%= render 'form' %>
